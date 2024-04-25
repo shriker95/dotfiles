@@ -12,7 +12,6 @@
     ],
     "modules-right": [
         "tray",
-        "memory",
         "network",
         "pulseaudio",
         "battery",
@@ -51,18 +50,13 @@
             "5": []
         }
     },
-    "memory": {
-        "interval": 5,
-        "format": "󰍛 {}%",
-        "max-length": 10
-    },
     "tray": {
         "spacing": 10
     },
     "clock": {
         "tooltip-format": "<tt>{calendar}</tt>",
         "format-alt": "  {:%a, %d %b %Y}",
-        "format": "  {:%I:%M %p}"
+        "format": "  {:%H:%M}"
     },
     "network": {
         "format-wifi" : "{icon}",
@@ -94,7 +88,7 @@
     "custom/logo": {
         "format": "  ",
         "tooltip": false,
-        "on-click": "~/.config/rofi/launchers/misc/launcher.sh &"
+        "on-click": "wofi --show run"
     },
     "battery": {
         "format": "{capacity}% {icon}",
@@ -135,6 +129,6 @@
     "custom/power": {
         "format": "󰤆",
         "tooltip": false,
-        "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
+        "on-click": "~/.config/powermenu.sh &"
     }
 }

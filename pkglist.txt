@@ -1,6 +1,8 @@
 alacritty
 base
 base-devel
+bluez
+bluez-utils
 brightnessctl
 btop
 chromium
@@ -35,6 +37,7 @@ network-manager-applet
 networkmanager
 noto-fonts
 otf-font-awesome
+pamixer
 pavucontrol
 pcmanfm-qt
 pipewire
@@ -43,6 +46,7 @@ pipewire-jack
 pipewire-pulse
 qt5-styleplugins
 qt5ct
+shotman
 slurp
 smartmontools
 sof-firmware
@@ -50,6 +54,7 @@ sway
 swaybg
 swayidle
 swaylock
+tio
 ttf-font-awesome
 ttf-jetbrains-mono-nerd
 vim
