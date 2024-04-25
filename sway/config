@@ -223,3 +223,7 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86Search exec bemenu-run
+
+bindsym $mod+p       exec shotman --capture window
+bindsym $mod+Shift+p exec shotman --capture region
+bindsym $mod+Ctrl+p  exec shotman --capture output
