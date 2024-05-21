@@ -213,6 +213,7 @@ bar swaybar_command waybar
 
 include /etc/sway/config.d/*
 
+# Enable special keys
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
@@ -220,10 +221,14 @@ bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioNext exec playerctl nextBTN_MIDDLE
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86Search exec bemenu-run
 
+# screenshot tools
 bindsym $mod+p       exec shotman --capture window
 bindsym $mod+Shift+p exec shotman --capture region
 bindsym $mod+Ctrl+p  exec shotman --capture output
+
+# scroll button
+input "24704:32865:AMR-4630-XXX-0-_0-1023_USB_KEYBOARD_Mouse" scroll_button BTN_MIDDLE
